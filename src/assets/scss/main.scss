@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Saira', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap');  // src: local('MyFont'), url("../fonts/Saria/Saria-Black.ttf") format('ttf');
+}
+
+div.App {
+	padding-top: 15px;
+	padding-bottom: 24px;
+	max-width: 1000px;
+	font-family: 'Saira', sans-serif !important;
+	section.car {
+		// width: 900px;
+		height: 600px;
+		// background-color: gray;
+		margin-bottom: 15px;
+		border-radius: 15px;
+	}
+	section.board {
+		display: flex;
+		justify-content: space-between;
+		.leaderboard{
+			small {
+				margin-bottom: -8px;
+				font-weight: 200;
+				font-size: 11px;
+			}
+			.card-header {
+				display: flex;
+				justify-content: space-between;
+				background-color: var(--secondaryColor);
+				box-shadow: inset 0px 10px 15px -13px white;
+				padding: 10px;
+				span { 
+					display: block;
+					font-weight: 500;
+				}
+				.record {
+					padding: 13px 0 0 13px;
+					font-size: 12px;
+					span {
+						font-weight: 900;
+					    font-size: 47px;
+					    padding-bottom: 4px;
+					    text-shadow: -1px 0px 5px var(--primaryColor);
+					}
+				}
+				.rank {
+				    border-radius: 50%;
+				    background-color: var(--primaryColor);
+				    width: 65px;
+				    height: 65px;
+				    line-height: 16px;
+    				text-align: center;
+    				span {
+    					padding-top: 16px;
+    				}
+				}
+			}
+			.card-content {
+				padding: 0 10px;
+				.player {
+					display: flex;
+					justify-content: space-between;
+					text-align: center;
+					align-items: center;
+					border-bottom: 1px solid #ffffff08;
+					line-height: 16px;
+					.name {
+						font-weight: 500px;
+					}
+					strong {
+						display: block;
+						font-size: large
+					}
+					.record {
+						display: inline-block;
+						background-color: #251b50;
+						padding: 4px 10px;
+						small {}
+					}
+					.rank {
+						display: inline-block;
+						padding: 0 3px 0 10px;
+						width: 50px;
+						small {}	
+					}
+				}
+			}
+		}
+		.chat {
+			width: 38%;
+			box-shadow: none !important;
+			border: 0;
+			border-radius: 0 !important;
+			.card-content {
+				min-height: 130px;
+				border: 4px solid;
+				padding: 10px 15px;
+				border-radius: 15px;
+				margin-bottom: 15px;
+				height: 200px;
+				overflow: hidden;
+				.msg {
+
+					&.pink_msg {
+						color: var(--secondaryColor);
+						font-weight: 500;				
+					}
+					&.orange_msg {
+						color: #f37f36;
+						font-weight: 500;
+					}
+					font-weight: 200;
+					strong {
+						font-weight: 500
+					}
+				}
+			}
+			.card-footer {
+				> div {
+					width: 70%;
+					div {
+						&::after {
+							border: 0 !important;
+						}
+						input {
+					font-family: 'Saira', sans-serif !important;
+							color: white;
+							border: 3px solid;
+							padding: 8px;
+							margin: 4px 6px 0 0px;
+							margin: 3px;
+							border-radius: 9px;
+						}
+					}
+				}
+				button {
+					background-color: var(--secondaryColor);
+					border: 2px solid #ffffff42;
+					outline: 2px solid #000;
+					width: 27%;
+					margin: 5px 0 0 6px;
+				}
+			}
+		}
+		.players {
+			// padding: 5px 13px;
+			.card-header {
+				background-color: #2d254c;
+				h3 {
+					margin: 0 12px;
+					padding: 4px 0;
+					display: flex;
+					justify-content: space-between;
+					font-weight: 500;
+					font-size: 18px;
+				}
+			}
+			.card-content {
+				button {
+					background-color: var(--secondaryColor);
+					border: 2px solid #ffffff42;
+					outline: 2px solid #000;
+					margin: 10px 3px;
+					width: 90%;
+					margin: 10px 15px;
+				}
+				> div {
+					// max-height: 200px;
+					// overflow: auto;
+				}
+				.player {
+					display: flex;
+					align-items: center;
+					margin: 0px 0 8px 15px;
+					img {
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//global classes
+.card {
+	width: 30%;
+	// height: 200px;
+	color: white !important;
+	border: 1px solid #ffffff14;
+	box-shadow: inset 0px 0px 30px -20px white !important;
+	background-color: transparent !important;
+	border-radius: 15px !important;
+}
+
+button {
+	font-family: 'Saira', sans-serif !important;
+	font-weight: 900 !important;
+	text-transform: capitalize !important;
+}

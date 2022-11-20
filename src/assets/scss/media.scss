@@ -1,0 +1,16 @@
+//
+@media(max-width: 900px) {
+
+	div.App {
+		section.board {
+			display: block;
+			.chat {
+				width: 100%
+			}
+		}
+	}
+
+	.card {
+		width: 100%
+	}
+}
